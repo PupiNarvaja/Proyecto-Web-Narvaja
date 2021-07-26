@@ -77,6 +77,19 @@
     width: 85%;
     font-size: 8px; } }
 
+#footer {
+  background-color: #ef6001;
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500; }
+  #footer ul {
+    list-style-type: none; }
+    #footer ul li a {
+      color: black; }
+
 * {
   margin: 0;
   padding: 0;

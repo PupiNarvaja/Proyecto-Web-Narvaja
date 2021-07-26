@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="vehículos, autos, compra, venta, cotizacion, automotriz, 0km">
+    <meta name="description" content="¿Busca algún vehículo que se adapte a usted? Encuentrelo en NOMBRE EMPRESA.">
+    <title>Asesoría personalizada</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+            <a href="../index.html"><img src="../multimedia/logo.png" class="header__logo" alt="logo"></a>       
+        <nav id="nav" class="header__nav">
+            <ul class="header__listaNavegacion">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./cotizarmivehiculo.html">Cotizar mi vehículo</a></li>
+                <li><a href="./asesoriapersonalizada.html">Asesoría personalizada</a></li>
+                <li><a href="./micuenta.html">Mi cuenta</a></li>
+                <li><a href="./misguardados.html">Mis guardados</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mainAsesoria">
+        <section class="simplificarBusqueda">
+            <h1>¿Querés simplificar incluso más la búsqueda?</h1>
+                <h2>No te preocupes, nosotros lo hacemos por vos.</h2>
+            <form>                
+                <ul class="listaAsesoria">
+                    <li>Cantidad de acompañantes cotidianamente:<il>
+                        <select name="tipo" id="">
+                            <option value="Indiferente">Indiferente</option>
+                            <option value="Familiar">Familiar</option>
+                            <option value="Soltero/Pareja">Soltero/Pareja</option>
+                        </select>
+                    <li>Tipo de uso cotidiano:</il>
+                        <select name="uso" id="">
+                            <option value="Indiferente">Indiferente</option>
+                            <option value="personal">Personal</option>
+                            <option value="profesional">Profesional</option>
+                        </select>
+                    <li>Mantenimiento:</il>
+                        <select name="Mantenimiento" id="">
+                            <option value="Indiferente">Indiferente</option>
+                            <option value="Económico">Económico</option>
+                            <option value="Equilibrado">Equilibrado</option>
+                        </select>
+                    <li>Tipo de carrocería:</il>
+                        <select name="carrocería" id="">
+                            <option value="Indiferente">Indiferente</option>
+                            <option value="hatchback">Hatchback</option>
+                            <option value="sedán">Sedán</option>
+                            <option value="SUV">SUV</option>
+                            <option value="pick-up">Pick-up</option>
+                        </select>
+                    <li>Combustible:</il>
+                        <select name="combustible" id="">
+                            <option value="Indiferente">Indiferente</option>
+                            <option value="nafta">Nafta</option>
+                            <option value="diésel">Diésel</option>
+                            <option value="GNC">GNC</option>
+                            <option value="eléctrico">Eléctrico</option>
+                            <option value="Híbrido">Híbrido</option>
+                        </select>
+                    <li>Año desde:</il>
+                        <select name="año">
+                            <option value="empty"></option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                            <option value="2007">2007</option>
+                            <option value="2006">2006</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                            <option value="2003">2003</option>
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option>
+                            <option value="2000">2000</option>
+                        </select>
+                    <span>hasta</span>
+                        <select name="año" id="">
+                            <option value="empty"></option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                            <option value="2007">2007</option>
+                            <option value="2006">2006</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                            <option value="2003">2003</option>
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option>
+                            <option value="2000">2000</option>
+                        </select>
+                    </ul>
+                    <input type="submit" value="Buscar" class="btnBuscarAsesoria">
+                    <input type="reset" value="Borrar datos" class="btnResetAsesoria">
+            </form>
+            
+            </section>
+    </main>
+    
+    <footer id="footer">
+        <ul>
+            <li>Contacto:</li>
+            <li>+54 9 1234-0704.</li>
+            <li><a href="mailto:pupinarvaja@gmail.com?Subject=Solicito%20asesoramiento.">Pupinarvaja@gmail.com</a></li>
+        </ul> 
+    <span>Todos los derechos han sido reservados.</span>
+    <span>Nombre de la empresa &copy;</span>
+</footer>
+</body>
+</html>

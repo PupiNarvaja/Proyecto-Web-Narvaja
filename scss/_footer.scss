@@ -1,0 +1,19 @@
+$naranja: #ef6001;
+
+#footer {
+    background-color: $naranja;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    ul {
+        list-style-type: none;
+        li {
+            a{
+                color: black;
+            }
+        }
+    }
+}
