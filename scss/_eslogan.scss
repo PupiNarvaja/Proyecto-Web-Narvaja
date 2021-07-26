@@ -1,0 +1,30 @@
+.eslogan {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    font-family: 'Nunito', sans-serif;
+    font-style: oblique;
+    font-size: 14px;
+    text-align: center;
+    margin: 2% auto;
+}
+
+
+@media (max-width: 1024px) {
+    .eslogan {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .eslogan {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 520px) {
+    .eslogan {
+        width: 85%;
+        font-size: 8px;
+    }
+}

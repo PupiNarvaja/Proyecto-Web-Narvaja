@@ -1,0 +1,197 @@
+@import "header";
+@import "eslogan";
+
+$naranja: #ef6001;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(230, 230, 230);
+    .main {
+        .destacados {
+            display: flex;
+            justify-content: space-between;
+            margin: 4% 5%;
+            color: black;
+            font-family: 'Nunito', sans-serif;
+            font-size: 18px;
+            h2 {
+                align-self: center;
+            }
+            aside {
+                h3 {
+                    margin: 1% 0;
+                }
+                .listaFiltro {
+                    display: flex;
+                    list-style-type: none;
+                    select {
+                        padding: 5px;
+                        border: none;
+                        border-radius: 10px;
+                        margin: 0 12px;
+                    }
+                }
+                .botonesFiltro {
+                    input {
+                        padding: 5px;
+                        margin: 2% 2% 2% 0;
+                        border: none;
+                        border-radius: 6px;
+                        background-color: white;
+                    } 
+                }
+            }
+        }
+        .publicacionesPrincipal {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            margin: 2% auto;
+            .publicacion {
+                width: calculate(img);
+                background-color: white;
+                padding: 10px 10px 20px 10px;
+                margin: 20px 10px;
+                border-radius: 5px;
+                img {
+                    width: 450px;
+                    height: 300px;
+                    border-radius: 5px;
+                }
+                h3 {
+                    display: flex;
+                    justify-content: center;
+                   font-family: 'Ubuntu', sans-serif;
+                    margin: 10px 0;
+                }
+            }
+        }
+        
+        .destacadoPrincipal{   
+        display: flex;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.678);
+        border-radius: 10px;
+        margin: 2% 8%;
+        padding: 5% 3%;
+            img {
+            width: 750px;
+            border-radius: 7px;
+            }
+        }
+        .masResultados {
+            display: flex;
+            justify-content: center;
+            margin: 2%;
+            button {
+                font-family: 'Nunito', sans-serif;
+                padding: 10px;
+                border-radius: 5px;
+                font-weight: bold;
+                border: none;
+                background-color: white;
+                box-shadow: inset 0 0 0 0 #ef6001;
+                transition: ease-out 0.2;
+                &:hover {
+                    transition: all .4s;
+                    box-shadow: inset 109px 0 0 0 #ef6001;
+                }
+            }
+        } 
+    }
+}
+
+
+
+
+//@media (max-width: 1920px) {}
+    
+
+@media (max-width: 1024px) {
+    body {
+        .main {
+            .destacadoPrincipal{
+                img{
+                    width: 100%;
+                }
+            }
+            .destacados {
+                font-size: 12px;
+                margin: 20px;
+                aside {
+                    h3 {
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                    .listaFiltro {
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: flex-end;
+                        li {
+                            margin: 5px;
+                            display: flex;
+                            justify-content: flex-end;
+                            font-size: 16px;
+                        }
+                    }
+                    .botonesFiltro {
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                }
+            }              
+        } 
+    }
+}
+    
+
+
+//@media (max-width: 940px) {}
+
+@media (max-width: 520px) {
+    body {
+        .main {
+            .destacadoPrincipal{
+                img{
+                    width: 100%;
+                }
+            }
+            .destacados {
+                font-size: 14px;
+                margin: 5px;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                aside {
+                    h3 {
+                        display: flex;
+                        justify-content: flex-start;
+                    }
+                    .listaFiltro {
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: flex-start;
+                        li {
+                            margin: 5px;
+                            display: flex;
+                            justify-content: flex-end;
+                        }
+                    }
+                    .botonesFiltro {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+                .publicacionesPrincipal {
+                margin: 1%;
+                }    
+            }
+        }
+    }
+}
+
+
