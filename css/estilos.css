@@ -26,7 +26,7 @@
 
 @media (max-width: 768px) {
   .header {
-    height: 22vh;
+    height: 15vh;
     display: flex; }
     .header #nav {
       align-self: start;
@@ -98,9 +98,9 @@
   .containerForm .cotizarVehiculo {
     background-color: white;
     border-radius: 7px;
+    margin: 2% 8%;
+    padding: 5% 3%;
     width: 70%;
-    height: 70%;
-    padding: 2%;
     box-shadow: 0px 0px 12px 3px grey;
     -webkit-box-shadow: 0px 0px 12px 3px grey;
     -moz-box-shadow: 0px 0px 12px 3px grey; }
@@ -108,10 +108,11 @@
       font-family: 'Nunito', sans-serif;
       font-weight: bolder;
       margin: 2% 0;
-      font-size: 20px; }
+      font-size: 1rem; }
     .containerForm .cotizarVehiculo .formCotizar {
       font-family: 'Nunito', sans-serif;
-      margin: 2% 0; }
+      margin: 2% 0;
+      font-size: 0.8rem; }
       .containerForm .cotizarVehiculo .formCotizar .listaCotizar {
         list-style-type: none;
         font-family: 'Nunito', sans-serif;
@@ -119,40 +120,161 @@
         margin: 10px;
         padding: 10px; }
         .containerForm .cotizarVehiculo .formCotizar .listaCotizar li {
-          margin: 10px 0; }
+          margin: 10px 0;
+          font-size: 1rem; }
         .containerForm .cotizarVehiculo .formCotizar .listaCotizar select {
           margin: 0 0 0 16px;
-          border-radius: 10px; }
+          border-radius: 10px;
+          outline: none; }
         .containerForm .cotizarVehiculo .formCotizar .listaCotizar input {
           margin: 0 0 0 16px;
           border-radius: 10px;
-          border: 1px solid black; }
+          border: 1px solid black;
+          outline: none; }
       .containerForm .cotizarVehiculo .formCotizar .btnCotizar {
-        padding: 6px;
+        padding: 1% 2%;
         margin: 1px 2%;
         border: 1px solid black;
-        border-radius: 12px;
+        border-radius: 4px;
         background-color: white; }
         .containerForm .cotizarVehiculo .formCotizar .btnCotizar:hover {
           transition: all .3s;
           background-color: black;
           color: white; }
       .containerForm .cotizarVehiculo .formCotizar .btnBorrarCotizar {
-        padding: 6px;
+        padding: 1% 2%;
         margin: 1px 2%;
         border: 1px solid black;
-        border-radius: 12px;
+        border-radius: 4px;
         background-color: white; }
         .containerForm .cotizarVehiculo .formCotizar .btnBorrarCotizar:hover {
           transition: all .3s;
           background-color: black;
           color: white; }
 
+@media (max-width: 768px) {
+  .main .cotizarVehiculo .preguntaCotizar {
+    font-size: 1rem; } }
+
+@media (max-width: 520px) {
+  .main .cotizarVehiculo .preguntaCotizar {
+    font-size: 0.8rem; } }
+
 .containerForm {
   height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center; }
+  .containerForm .simplificarBusqueda {
+    background-color: white;
+    border-radius: 7px;
+    margin: 2% 8%;
+    padding: 3% 3%;
+    width: 70%;
+    box-shadow: 0px 0px 12px 3px grey;
+    -webkit-box-shadow: 0px 0px 12px 3px grey;
+    -moz-box-shadow: 0px 0px 12px 3px grey; }
+    .containerForm .simplificarBusqueda h1 {
+      font-family: 'Nunito', sans-serif;
+      font-weight: bolder;
+      margin: 2% 0;
+      font-size: 1.5rem; }
+    .containerForm .simplificarBusqueda h2 {
+      font-family: 'Nunito', sans-serif;
+      margin: 0;
+      font-size: 1.3rem; }
+    .containerForm .simplificarBusqueda form .listaAsesoria {
+      list-style-type: none;
+      font-family: 'Nunito', sans-serif;
+      font-weight: bolder;
+      margin: 10px 10px 0 10px;
+      padding: 10px; }
+      .containerForm .simplificarBusqueda form .listaAsesoria li {
+        margin: 2% 0;
+        font-size: 1rem; }
+      .containerForm .simplificarBusqueda form .listaAsesoria select {
+        margin: 0 0 0 16px;
+        border-radius: 10px;
+        outline: none; }
+        .containerForm .simplificarBusqueda form .listaAsesoria select option {
+          font-weight: 100; }
+      .containerForm .simplificarBusqueda form .listaAsesoria input {
+        margin: 0 0 0 16px;
+        border-radius: 10px;
+        border: 1px solid black; }
+      .containerForm .simplificarBusqueda form .listaAsesoria span {
+        margin: 0 0 0 1%; }
+    .containerForm .simplificarBusqueda form input {
+      padding: 1% 2%;
+      margin: 1px 2%;
+      border: 1px solid black;
+      border-radius: 4px;
+      background-color: white; }
+      .containerForm .simplificarBusqueda form input:hover {
+        transition: all .3s;
+        background-color: black;
+        color: white; }
+
+.mainMiCuenta {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .mainMiCuenta .mainMiCuenta__misDatos {
+    background-color: white;
+    border-radius: 7px;
+    margin: 2% 8%;
+    padding: 5% 3%;
+    box-shadow: 0px 0px 12px 3px grey;
+    -webkit-box-shadow: 0px 0px 12px 3px grey;
+    -moz-box-shadow: 0px 0px 12px 3px grey;
+    font-family: 'Nunito', sans-serif; }
+    .mainMiCuenta .mainMiCuenta__misDatos h1 {
+      font-size: 1.5rem;
+      margin: 0 0 0 10px; }
+    .mainMiCuenta .mainMiCuenta__misDatos section {
+      display: flex;
+      flex-flow: row nowrap; }
+      .mainMiCuenta .mainMiCuenta__misDatos section .mainMiCuenta__fotoPerfil {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start; }
+        .mainMiCuenta .mainMiCuenta__misDatos section .mainMiCuenta__fotoPerfil img {
+          width: 100%; }
+      .mainMiCuenta .mainMiCuenta__misDatos section .mainMiCuenta__datos {
+        width: 200px;
+        display: flex;
+        flex-flow: row wrap; }
+        .mainMiCuenta .mainMiCuenta__misDatos section .mainMiCuenta__datos div {
+          margin: 5px; }
+
+@media (max-width: 520px) {
+  .mainMiCuenta .mainMiCuenta__misDatos h1 {
+    font-size: 1rem; } }
+
+.mainGuardados {
+  display: flex; }
+  .mainGuardados .misGuardadosPrincipal {
+    font-family: 'Nunito', sans-serif;
+    margin: 3%; }
+    .mainGuardados .misGuardadosPrincipal h1 {
+      margin: 5%; }
+    .mainGuardados .misGuardadosPrincipal .misGuardadosPrincipal__guardados {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center; }
+      .mainGuardados .misGuardadosPrincipal .misGuardadosPrincipal__guardados div {
+        background-color: white;
+        border-radius: 7px;
+        margin: 2% 8%;
+        padding: 5% 3%;
+        width: 90%;
+        box-shadow: 0px 0px 12px 3px grey;
+        -webkit-box-shadow: 0px 0px 12px 3px grey;
+        -moz-box-shadow: 0px 0px 12px 3px grey; }
+        .mainGuardados .misGuardadosPrincipal .misGuardadosPrincipal__guardados div a img {
+          width: 100%;
+          max-width: 400px; }
 
 * {
   margin: 0;

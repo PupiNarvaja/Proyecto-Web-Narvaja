@@ -1,0 +1,32 @@
+.mainGuardados {
+    display: flex;
+    .misGuardadosPrincipal {
+        font-family: 'Nunito', sans-serif;
+        margin: 3%;
+        h1 {
+            margin: 5%;
+        }
+        .misGuardadosPrincipal__guardados {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            div {
+                background-color: white;
+                border-radius: 7px;
+                margin: 2% 8%;
+                padding: 5% 3%;
+                width: 90%;
+                
+                box-shadow: 0px 0px 12px 3px grey;
+                -webkit-box-shadow: 0px 0px 12px 3px grey;
+                -moz-box-shadow: 0px 0px 12px 3px grey;
+                a {
+                    img {
+                        width: 100%;
+                        max-width: 400px;
+                    }
+                }
+            }
+        }
+    }
+}
