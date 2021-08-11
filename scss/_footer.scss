@@ -6,13 +6,45 @@ $naranja: #ef6001;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 500;
-    ul {
-        list-style-type: none;
-        li {
-            a{
-                color: black;
+    font-family: 'Open Sans', sans-serif;
+    .footer_container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 30%;
+    }
+    .footer__contacto { 
+        ul {
+            list-style-type: none;
+            li {
+                a{
+                    color: black;
+                }
+            }
+        }
+    }
+    .footer__derechos {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        text-align: center;
+        span {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .footer__socialMedia {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        span {
+            display: flex;
+            justify-content: flex-start;
+            font-weight: 600;
+            color: #acacac;
+            padding: 6px;
+            img {
+                width: 24px;
             }
         }
     }

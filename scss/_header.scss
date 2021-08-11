@@ -1,12 +1,10 @@
-$naranja: #ef6001;
-
+$naranja: #d65600;
 .header {
     background-color: $naranja;
     height: 15vh;
     display: flex;
     justify-content: space-between;
     position: relative;
-
     .header__logo {
         height: 15vh;
     }
@@ -18,17 +16,14 @@ $naranja: #ef6001;
         display: flex;
         list-style-type: none;
         align-items: flex-end;
-
         li {
             margin: 18px;
         }
-        
         a {
           text-decoration: none;
           color: black;
           font-family: 'Nunito', sans-serif;
-          font-weight: bold;
-
+          font-weight: bolder;
           &:hover {
               color: white;
               transition: all .3s;
