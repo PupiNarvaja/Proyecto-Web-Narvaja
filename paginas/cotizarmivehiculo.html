@@ -15,7 +15,12 @@
 </head>
 <body>
     <header class="header">
-            <a href="../index.html"><img src="../multimedia/logo.png" class="header__logo" alt="logo"></a>       
+        <div class="header__logoBox">
+            <a href="../index.html"><img src="../multimedia/logo.png" class="header__logo" alt="logo"></a>
+        </div>
+        <div class="boxBuscar">
+            <input type="text" name="search" placeholder="Buscar" class="barraBuscar" autocomplete="off">
+        </div>
         <nav id="nav" class="header__nav">
             <ul class="header__listaNavegacion">
                 <li><a href="../index.html">Inicio</a></li>
@@ -123,13 +128,21 @@
     </main>
     
     <footer id="footer">
-        <ul>
-            <li>Contacto:</li>
-            <li>+54 9 1234-0704.</li>
-            <li><a href="mailto:pupinarvaja@gmail.com?Subject=Solicito%20asesoramiento.">Pupinarvaja@gmail.com</a></li>
-        </ul> 
-    <span>Todos los derechos han sido reservados.</span>
-    <span>Narba&copy;</span>
-</footer>
+        <div class="footer__contacto footer_container">
+            <ul>
+                <li>Contacto:</li>
+                <li>+54 9 1234-0704.</li>
+                <li><a href="mailto:pupinarvaja@gmail.com?Subject=Solicito%20asesoramiento.">Pupinarvaja@gmail.com</a></li>
+            </ul> 
+        </div>
+        <div class="footer__derechos footer_container">
+            <span>Todos los derechos han sido reservados.</span>
+            <span>Narba&copy;</span>
+        </div>
+        <div class="footer__socialMedia footer_container">
+            <span><img src="../multimedia/instagram_logo.png">Instagram</span>
+            <span><img src="../multimedia/facebook_logo.png">Facebook</span>
+            <span><img src="../multimedia/twitter_logo.png">Twitter</span>
+    </footer>
 </body>
 </html>

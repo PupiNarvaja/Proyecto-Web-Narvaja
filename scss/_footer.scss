@@ -39,12 +39,42 @@ $naranja: #ef6001;
         align-items: center;
         span {
             display: flex;
-            justify-content: flex-start;
+            align-items: center;
             font-weight: 600;
             color: #acacac;
             padding: 6px;
             img {
                 width: 24px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 620px) {
+    body {
+        #footer {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    body {
+        #footer {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        #footer {
+            font-size: 10px;
+            .footer__socialMedia {
+                img {
+                    width: 18px;
+                }
             }
         }
     }

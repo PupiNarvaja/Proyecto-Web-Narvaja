@@ -1,12 +1,29 @@
 $naranja: #d65600;
 .header {
     background-color: $naranja;
-    height: 15vh;
+    height: 8rem;
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
-    position: relative;
-    .header__logo {
-        height: 15vh;
+    position: static;
+    .header__logoBox {
+        height: 8rem;
+        display: flex;
+        align-items: flex-end;
+        margin: 0 0 0 10px ;
+    }
+    .boxBuscar {
+        display: flex;
+        align-items: flex-end;
+        margin: 0 0 15px 0;
+        .barraBuscar {
+            padding: 8px 10px 8px 35px;
+            outline: none;
+            border: none;
+            border-radius: 3px;
+            background: white url("../multimedia/search-icon.png") no-repeat 9px center;
+            width: 600px;
+        }
     }
     .header__nav {
         margin: 0 3% 0 0;
@@ -33,10 +50,115 @@ $naranja: #d65600;
 }
 
 
+@media (max-width: 1550px) {
+    .header {
+        .boxBuscar {
+            .barraBuscar {
+                width: 450px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1450px) {
+    .header {
+        display: flex;
+        justify-content: flex-start;
+        .boxBuscar {
+            transform: translate(70px, -60px);
+            margin: 0 0 0 5%;
+            .barraBuscar {
+                width: 800px;
+            }
+        }
+        #nav {
+            position: absolute;
+            top: 70px;
+            left: 300px;
+            margin: 0 0 0 5%;
+            .header__listaNavegacion {
+                display: flex;
+                justify-content: space-between;
+                width: 800px;
+                li {
+                    margin: 18px 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .header {
+        .boxBuscar {
+            .barraBuscar{
+                width: 650px;
+            }   
+        }
+        #nav {
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 1130px) {
+    .header {
+        .boxBuscar {
+            .barraBuscar{
+                width: 550px;
+            }   
+        }
+        #nav {
+            .header__listaNavegacion {
+                justify-content: flex-start;
+                width: 700px;
+                li {
+                    margin: 18px 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .header {
+        .boxBuscar {
+            margin: 0;
+        }
+        #nav {
+            left: 250px;
+            margin: 0;
+            .header__listaNavegacion {
+                width: 600px;
+                li {
+                    margin: 18px 10px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 868px) {
+    .header {
+
+    }
+}
+
+
+
 @media (max-width: 768px) {
     .header {
-        height: 15vh;
         display: flex;
+        .header__logoBox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .header__logo {
+                width: 100%;
+                margin: 10px 0 0 0;
+            }
+        }
         #nav {
             align-self: start;
             margin: 0%;
@@ -58,11 +180,6 @@ $naranja: #d65600;
 
 @media (max-width: 520px) {
     .header {
-        align-items: center;
-        height: 15vh;
-        a {
-             max-height: 8vh;
-        }
         #nav {
             margin: 0%;
         }
@@ -71,10 +188,6 @@ $naranja: #d65600;
             li {
                 margin: 3% 3% 0 3%;
             }
-        }
-        .header__logo {
-            height: 8vh;
-            margin: auto 0;
         }
     }
 }

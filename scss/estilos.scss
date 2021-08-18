@@ -20,15 +20,20 @@ body {
     .main {
         .destacados {
             display: flex;
-            justify-content: space-between;
+            flex-flow: column nowrap;
             margin: 4% 5%;
             color: black;
             font-family: 'Nunito', sans-serif;
             font-size: 18px;
             h2 {
                 align-self: center;
+                margin: 2% 0;
             }
             aside {
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-items: center;
                 h3 {
                     margin: 1% 0;
                 }
@@ -39,17 +44,21 @@ body {
                         background-color: white;
                         padding: 5px;
                         border: 1px solid black;
-                        border-radius: 12px;
-                        margin: 0 12px;
+                        border-radius: 15px;
+                        margin: 0 48px 0 18px;
                         outline: none;
                     }
                 }
                 .botonesFiltro {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                    margin: 2% 0 0 0;
+                    width: 250px;
                     input {
-                        padding: 6px;
-                        margin: 2% 2% 2% 0;
+                        padding: 8px 15px;
                         border: 1px solid black;
-                        border-radius: 12px;
+                        border-radius: 18px;
                         background-color: white;
                         transition: all .3s;
                         &:hover {
@@ -83,7 +92,7 @@ body {
                     transform: scale(110%);
                 }
                 img {
-                    width: 350px;
+                    width: 330px;
                     height: 225px;
                     border-radius: 5px;
                 }
@@ -117,7 +126,7 @@ body {
         .masResultados {
             display: flex;
             justify-content: center;
-            margin: 2%;
+            margin: 1rem 0 3rem 0;
             button {
                 font-family: 'Nunito', sans-serif;
                 padding: 10px;
@@ -175,27 +184,19 @@ body {
                 }
             }
             .destacados {
-                font-size: 12px;
+                font-size: 16px;
                 margin: 20px;
                 aside {
-                    h3 {
-                        display: flex;
-                        justify-content: flex-end;
-                    }
                     .listaFiltro {
                         display: flex;
                         flex-flow: row wrap;
-                        justify-content: flex-end;
+                        justify-content: space-evenly;
                         li {
                             margin: 5px;
-                            display: flex;
-                            justify-content: flex-end;
-                            font-size: 16px;
+                            select {
+                                margin: 10px;
+                            }
                         }
-                    }
-                    .botonesFiltro {
-                        display: flex;
-                        justify-content: flex-end;
                     }
                 }
             }
@@ -208,15 +209,24 @@ body {
     }
 }
 
-
-
-@media (max-width: 1300px) {
-    
+@media (max-width: 790px) {
+    body {
+        .main {
+            .destacados {
+                aside {
+                    .listaFiltro {
+                        li {
+                            margin: 5px;
+                            select {
+                                margin: 5px;
+                            }
+                        }
+                    }
+                }
+            }               
+        } 
+    }
 }
-
-
-
-
 
 
 //@media (max-width: 940px) {}
@@ -229,38 +239,57 @@ body {
                     width: 100%;
                 }
             }
-            .destacados {
-                font-size: 14px;
-                margin: 5px;
-                display: flex;
-                flex-flow: column wrap;
-                justify-content: center;
-                aside {
-                    h3 {
-                        display: flex;
-                        justify-content: flex-start;
-                    }
-                    .listaFiltro {
-                        display: flex;
-                        flex-flow: row wrap;
-                        justify-content: flex-start;
-                        li {
-                            margin: 5px;
-                            display: flex;
-                            justify-content: flex-end;
-                        }
-                    }
-                    .botonesFiltro {
-                        display: flex;
-                        justify-content: center;
-                    }
-                }
-                .publicacionesPrincipal {
-                margin: 1%;
-                }    
-            }
+            // .destacados {
+            //     font-size: 14px;
+            //     margin: 5px;
+            //     display: flex;
+            //     flex-flow: column wrap;
+            //     justify-content: center;
+            //     aside {
+            //         h3 {
+            //             display: flex;
+            //             justify-content: flex-start;
+            //         }
+            //         .listaFiltro {
+            //             display: flex;
+            //             flex-flow: row wrap;
+            //             justify-content: flex-start;
+            //             li {
+            //                 margin: 5px;
+            //                 display: flex;
+            //                 justify-content: flex-end;
+            //             }
+            //         }
+            //         .botonesFiltro {
+            //             display: flex;
+            //             justify-content: center;
+            //         }
+            //     }
+            //     .publicacionesPrincipal {
+            //     margin: 1%;
+            //     }    
+            // }
         }
     }
 }
 
-
+@media (max-width: 450px) {
+    body {
+        .main {
+            .destacados {
+                aside {
+                    .listaFiltro {
+                        display: flex;
+                        justify-content: flex-start;
+                        li {
+                            margin: 5px;
+                            select {
+                                margin: 5px;
+                            }
+                        }
+                    }
+                }
+            }               
+        } 
+    }
+}
