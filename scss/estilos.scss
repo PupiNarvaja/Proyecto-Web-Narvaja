@@ -199,12 +199,12 @@ body {
                     .main__listaFiltros {
                         display: flex;
                         flex-flow: row wrap;
-                        justify-content: space-evenly;
+                        justify-content: center; //-----------------------------------------------------------------------------------
                         li {
                             margin: 5px;
-                            select {
-                                margin: 10px;
-                            }
+                        }
+                        select {
+                            margin: 0 10px 10px 0;
                         }
                     }
                 }
@@ -218,17 +218,18 @@ body {
     }
 }
 
-@media (max-width: 790px) {
+@media (max-width: 734px) {
     body {
         .main {
             .main__destacados {
                 .main__filtros {
+                    .botonesFiltro {
+                        margin: 20px 0 0 0;
+                    }
                     .main__listaFiltros {
-                        li {
-                            margin: 5px;
-                            select {
-                                margin: 5px;
-                            }
+                        width: 280px;
+                        select {
+                            margin: 2px 0 2px 0;
                         }
                     }
                 }
@@ -260,20 +261,14 @@ body {
                     }
                 }
             }
-            .main__destacados {
-                .main__filtros {
-                    .main__listaFiltros {
-                        display: flex;
-                        justify-content: flex-start;
-                        li {
-                            margin: 5px;
-                            select {
-                                margin: 5px;
-                            }
-                        }
-                    }
-                }
-            }               
+            // .main__destacados {
+            //     .main__filtros {
+            //         .main__listaFiltros {
+            //             display: flex;
+            //             justify-content: flex-start;
+            //         }
+            //     }
+            // }               
         } 
     }
 }

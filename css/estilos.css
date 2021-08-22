@@ -687,20 +687,22 @@ body {
     body .main .main__destacados .main__filtros .main__listaFiltros {
       display: flex;
       flex-flow: row wrap;
-      justify-content: space-evenly; }
+      justify-content: center; }
       body .main .main__destacados .main__filtros .main__listaFiltros li {
         margin: 5px; }
-        body .main .main__destacados .main__filtros .main__listaFiltros li select {
-          margin: 10px; }
+      body .main .main__destacados .main__filtros .main__listaFiltros select {
+        margin: 0 10px 10px 0; }
   body .main .publicacionesPrincipal {
     width: 100%;
     margin: 1% auto; } }
 
-@media (max-width: 790px) {
-  body .main .main__destacados .main__filtros .main__listaFiltros li {
-    margin: 5px; }
-    body .main .main__destacados .main__filtros .main__listaFiltros li select {
-      margin: 5px; } }
+@media (max-width: 734px) {
+  body .main .main__destacados .main__filtros .botonesFiltro {
+    margin: 20px 0 0 0; }
+  body .main .main__destacados .main__filtros .main__listaFiltros {
+    width: 280px; }
+    body .main .main__destacados .main__filtros .main__listaFiltros select {
+      margin: 2px 0 2px 0; } }
 
 @media (max-width: 520px) {
   body .main .main__destacadoPrincipal img {
@@ -709,11 +711,4 @@ body {
 @media (max-width: 450px) {
   body .main .publicacionesPrincipal .publicacion img {
     width: 280px;
-    height: 190px; }
-  body .main .main__destacados .main__filtros .main__listaFiltros {
-    display: flex;
-    justify-content: flex-start; }
-    body .main .main__destacados .main__filtros .main__listaFiltros li {
-      margin: 5px; }
-      body .main .main__destacados .main__filtros .main__listaFiltros li select {
-        margin: 5px; } }
+    height: 190px; } }
