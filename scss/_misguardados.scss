@@ -1,29 +1,137 @@
 .mainGuardados {
     display: flex;
+    justify-content: center;
+    width: 85%;
+    margin: auto;
     .misGuardadosPrincipal {
         font-family: 'Nunito', sans-serif;
-        margin: 3%;
         h1 {
-            margin: 5%;
+            margin: 50px 0 30px 8%;
         }
         .misGuardadosPrincipal__guardados {
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
-            div {
+            margin: 0 0 30px 0;
+            .guardados--container {
+                display: flex;
+                flex-flow: row nowrap;
                 background-color: white;
                 border-radius: 7px;
-                margin: 2% 8%;
-                padding: 5% 3%;
-                width: 90%;
-                
+                margin: 1%;
+                padding: 2% 2%;
+                width: 100%;
                 box-shadow: 0px 0px 12px 3px grey;
                 -webkit-box-shadow: 0px 0px 12px 3px grey;
                 -moz-box-shadow: 0px 0px 12px 3px grey;
-                a {
-                    img {
+                .guardados__subDiv {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    a {
+                        img {
+                            width: 330px;
+                            height: 225px;
+                            border-radius: 5px;
+                        }
+                    }
+                    h2 {
+                        font-size: 1.2rem;
+                        margin: 5px 0 0 0;
+                    }
+                }
+                .guardados__breveDescrip {
+                    display: grid;
+                    align-items: center;
+                    grid-template-columns: 200px 200px 200px;
+                    font-size: 18px;
+                    margin: 0 100px ;
+                    border-left: 1px solid black;
+                    div {
+                        text-align: justify;
+                        margin: 8px;
                         width: 100%;
-                        max-width: 400px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1170px) {
+    .mainGuardados {
+        .misGuardadosPrincipal {
+            h1 {
+                margin: 5% 2%;
+            }
+            .misGuardadosPrincipal__guardados {
+                .guardados--container {
+                    .guardados__breveDescrip {
+                        grid-template-columns: 150px 150px 150px;
+                        margin: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .mainGuardados {
+        .misGuardadosPrincipal {
+            .misGuardadosPrincipal__guardados {
+                .guardados--container {
+                    .guardados__breveDescrip {
+                        grid-template-columns: auto auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .mainGuardados {
+        .misGuardadosPrincipal {
+            .misGuardadosPrincipal__guardados {
+                .guardados--container {
+                    .guardados__breveDescrip {
+                        margin: 10px 0;
+                        font-size: 16px;
+                        border: none;
+                    }
+                    .guardados__subDiv {
+                        a {
+                            img {
+                                width: 280px;
+                                height: 190px;
+                                border-radius: 5px;
+                            }
+                        }
+                        h2 {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 580px) {
+    .mainGuardados {
+        .misGuardadosPrincipal {
+            .misGuardadosPrincipal__guardados {
+                .guardados--container {
+                    background-color: rgba(255, 255, 255, 0.74);
+                    padding: 10px 10px 20px 10px;
+                    margin: 15px 0;
+                    border-radius: 4px;
+                    .guardados__breveDescrip {
+                        display: none;
                     }
                 }
             }

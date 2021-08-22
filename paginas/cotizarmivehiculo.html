@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,30 +15,44 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__logoBox">
+        <div class="header__boxLogo">
             <a href="../index.html"><img src="../multimedia/logo.png" class="header__logo" alt="logo"></a>
         </div>
-        <div class="boxBuscar">
+        <div class="header__boxBuscar">
             <input type="text" name="search" placeholder="Buscar" class="barraBuscar" autocomplete="off">
         </div>
-        <nav id="nav" class="header__nav">
-            <ul class="header__listaNavegacion">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./cotizarmivehiculo.html">Cotizar mi vehículo</a></li>
-                <li><a href="./asesoriapersonalizada.html">Asesoría personalizada</a></li>
-                <li><a href="./micuenta.html">Mi cuenta</a></li>
-                <li><a href="./misguardados.html">Mis guardados</a></li>
-            </ul>
-        </nav>
+            <nav id="nav">
+                <ul class="header__listaNav">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./cotizarmivehiculo.html">Cotizar mi vehículo</a></li>
+                    <li><a href="./asesoriapersonalizada.html">Asesoría personalizada</a></li>
+                    <li><a href="./micuenta.html">Mi cuenta</a></li>
+                    <li><a href="./misguardados.html">Mis guardados</a></li>
+                </ul>
+            </nav>
+        <div id="respmenu">
+            <input type="checkbox">
+            <img src="../multimedia/openMenu.png" class="openMenu"></img>
+            <img src="../multimedia/closeMenu.png" class="closeMenu"></img>
+            <nav>
+                <ul class="header__listaNavResp">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./cotizarmivehiculo.html">Cotizar mi vehículo</a></li>
+                    <li><a href="./asesoriapersonalizada.html">Asesoría personalizada</a></li>
+                    <li><a href="./micuenta.html">Mi cuenta</a></li>
+                    <li><a href="./misguardados.html">Mis guardados</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main class="main containerForm">
-        <section class="cotizarVehiculo">
+    <main class="main mainCotizar main--container">
+        <section class="main__cotizar">
             <div class="preguntaCotizar">
                 <h1>¿Querés cotizar tu vehículo?</h1>
             </div>
             <form action="" class="formCotizar">
                     <h2>Lo hacemos por vos. Ingresa los datos del mismo ↓</h2>      
-                    <ul class="listaCotizar">
+                    <ul class="formCotizar__lista">
                         <li>Marca:</il>
                             <select name="marca">
                                 <option value="empty"></option>
@@ -49,7 +63,6 @@
                                 <option value="Honda">Honda</option>
                                 <option value="Peugeot">Peugeot</option>
                             </select>
-
                         <li>Modelo:</il>
                             <select name="modelo">
                                 <option value="empty"></option>
@@ -80,7 +93,6 @@
                                 <option value="307">307</option>
                                 <option value="308">308</option>
                             </select>
-
                         <li>Versión:</il>
                             <select name="version">
                                 <option value="empty"></option>
@@ -89,7 +101,6 @@
                                 <option value="sd">Sd</option>
                                 <option value="gti">Gti</option>
                             </select>
-
                         <li>Año:</il>
                             <select name="año">
                                 <option value="empty"></option>
@@ -116,30 +127,27 @@
                                 <option value="2001">2001</option>
                                 <option value="2000">2000</option>
                             </select>
-
                         <li>Kilometraje:</il>
-                            <input type="text" name="kilometraje">
+                        <input class="cotizarKm"type="text" name="kilometraje">
                     </ul>
-                    
-                    <input type="submit" value="Cotizar" class="btnCotizar">
+                    <input type="submit" value="Cotizar" class="btnEnviarCotizar">
                     <input type="reset" value="Borrar datos" class="btnBorrarCotizar">        
             </form>
         </section>
     </main>
-    
     <footer id="footer">
-        <div class="footer__contacto footer_container">
+        <div class="footer__contacto footer--container">
             <ul>
                 <li>Contacto:</li>
                 <li>+54 9 1234-0704.</li>
                 <li><a href="mailto:pupinarvaja@gmail.com?Subject=Solicito%20asesoramiento.">Pupinarvaja@gmail.com</a></li>
             </ul> 
         </div>
-        <div class="footer__derechos footer_container">
+        <div class="footer__derechos footer--container">
             <span>Todos los derechos han sido reservados.</span>
             <span>Narba&copy;</span>
         </div>
-        <div class="footer__socialMedia footer_container">
+        <div class="footer__socialMedia footer--container">
             <span><img src="../multimedia/instagram_logo.png">Instagram</span>
             <span><img src="../multimedia/facebook_logo.png">Facebook</span>
             <span><img src="../multimedia/twitter_logo.png">Twitter</span>

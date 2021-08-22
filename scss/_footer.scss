@@ -1,13 +1,14 @@
 $naranja: #ef6001;
 
 #footer {
+    width: 100%;
     background-color: $naranja;
-    height: 15vh;
+    height: 8rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: 'Open Sans', sans-serif;
-    .footer_container {
+    .footer--container {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;

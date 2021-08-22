@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="vehículos, autos, compra, venta, cotizacion, automotriz, 0km">
-    <meta name="description" content="En NOMBRE EMPRESA ofrecemos los mejores vehículos de sudamérica para sus necesidades sean cuales sean.">
+    <meta name="description" content="En Narba ofrecemos los mejores vehículos de sudamérica para sus necesidades sean cuales sean.">
     <title>Narba | Vehículos destacados</title>
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,26 +16,26 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__logoBox">
+        <div class="header__boxLogo">
             <a href="./index.html"><img src="./multimedia/logo.png" class="header__logo" alt="logo"></a>
         </div>
-        <div class="boxBuscar">
+        <div class="header__boxBuscar">
             <input type="text" name="search" placeholder="Buscar" class="barraBuscar" autocomplete="off">
         </div>
-        <nav id="nav" class="header__nav">
-            <ul class="header__listaNavegacion">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./paginas/cotizarmivehiculo.html">Cotizar mi vehículo</a></li>
-                <li><a href="./paginas/asesoriapersonalizada.html">Asesoría personalizada</a></li>
-                <li><a href="./paginas/micuenta.html">Mi cuenta</a></li>
-                <li><a href="./paginas/misguardados.html">Mis guardados</a></li>
-            </ul>
-        </nav>
+            <nav id="nav">
+                <ul class="header__listaNav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="./paginas/cotizarmivehiculo.html">Cotizar mi vehículo</a></li>
+                    <li><a href="./paginas/asesoriapersonalizada.html">Asesoría personalizada</a></li>
+                    <li><a href="./paginas/micuenta.html">Mi cuenta</a></li>
+                    <li><a href="./paginas/misguardados.html">Mis guardados</a></li>
+                </ul>
+            </nav>
         <div id="respmenu">
             <input type="checkbox">
-            <img src="multimedia/openMenu.png" class="fas fa-bars"></img>
-            <img src="multimedia/closeMenu.png" class="fas fa-times"></img>
-            <nav id="navResp">
+            <img src="multimedia/openMenu.png" class="openMenu"></img>
+            <img src="multimedia/closeMenu.png" class="closeMenu"></img>
+            <nav>
                 <ul class="header__listaNavResp">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="./paginas/cotizarmivehiculo.html">Cotizar mi vehículo</a></li>
@@ -50,16 +50,15 @@
         <h1>"Damos oportunidad a la gente a comprar o vender vehículos de una forma más simple."</h1>
     </div>
     
-    
     <main class="main">
-        <div class="destacadoPrincipal">
+        <div class="main__destacadoPrincipal">
             <a href="#"><img src="./multimedia/ford focus destacado.jpg"></a>
         </div>
-        <div class="destacados">
+        <div class="main__destacados">
             <h2>Destacados del mes:</h2>
-            <aside>
+            <div class="main__filtros">
                 <h3>Filtros de búsqueda:</h3>
-                <ul class="listaFiltro">
+                <ul class="main__listaFiltros">
                     <li>Marca:</il>
                         <select name="Marca">
                             <option value="Todos">Todos</option>
@@ -120,10 +119,9 @@
                     <input type="submit" value="Aplicar filtros">
                     <input type="reset" value="Limpiar filtros">
                 </div>
-            </aside>
+            </div>
         </div>
-                        
-                        
+                            
         <section class="publicacionesPrincipal">
             <div class="publicacion">
                 <a href="#"><img src="./multimedia/captur.jpg"></a>
@@ -178,18 +176,18 @@
 
 
     <footer id="footer">
-        <div class="footer__contacto footer_container">
+        <div class="footer__contacto footer--container">
             <ul>
                 <li>Contacto:</li>
                 <li>+54 9 1234-0704.</li>
                 <li><a href="mailto:pupinarvaja@gmail.com?Subject=Solicito%20asesoramiento.">Pupinarvaja@gmail.com</a></li>
             </ul> 
         </div>
-        <div class="footer__derechos footer_container">
+        <div class="footer__derechos footer--container">
             <span>Todos los derechos han sido reservados.</span>
             <span>Narba&copy;</span>
         </div>
-        <div class="footer__socialMedia footer_container">
+        <div class="footer__socialMedia footer--container">
             <span><img src="./multimedia/instagram_logo.png">Instagram</span>
             <span><img src="./multimedia/facebook_logo.png">Facebook</span>
             <span><img src="./multimedia/twitter_logo.png">Twitter</span>

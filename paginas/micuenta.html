@@ -15,27 +15,43 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__logoBox">
+        <div class="header__boxLogo">
             <a href="../index.html"><img src="../multimedia/logo.png" class="header__logo" alt="logo"></a>
         </div>
-        <div class="boxBuscar">
+        <div class="header__boxBuscar">
             <input type="text" name="search" placeholder="Buscar" class="barraBuscar" autocomplete="off">
         </div>
-        <nav id="nav" class="header__nav">
-            <ul class="header__listaNavegacion">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./cotizarmivehiculo.html">Cotizar mi vehículo</a></li>
-                <li><a href="./asesoriapersonalizada.html">Asesoría personalizada</a></li>
-                <li><a href="./micuenta.html">Mi cuenta</a></li>
-                <li><a href="./misguardados.html">Mis guardados</a></li>
-            </ul>
-        </nav>
+            <nav id="nav">
+                <ul class="header__listaNav">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./cotizarmivehiculo.html">Cotizar mi vehículo</a></li>
+                    <li><a href="./asesoriapersonalizada.html">Asesoría personalizada</a></li>
+                    <li><a href="./micuenta.html">Mi cuenta</a></li>
+                    <li><a href="./misguardados.html">Mis guardados</a></li>
+                </ul>
+            </nav>
+        <div id="respmenu">
+            <input type="checkbox">
+            <img src="../multimedia/openMenu.png" class="openMenu"></img>
+            <img src="../multimedia/closeMenu.png" class="closeMenu"></img>
+            <nav>
+                <ul class="header__listaNavResp">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./cotizarmivehiculo.html">Cotizar mi vehículo</a></li>
+                    <li><a href="./asesoriapersonalizada.html">Asesoría personalizada</a></li>
+                    <li><a href="./micuenta.html">Mi cuenta</a></li>
+                    <li><a href="./misguardados.html">Mis guardados</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main class="mainMiCuenta">
+    <main class="mainMiCuenta main--container">
         <section class="mainMiCuenta__misDatos">
             <h1>Mis datos:</h1>
             <section>
-                <div class="mainMiCuenta__fotoPerfil"><img src="../multimedia/Foto de perfil.jpg" alt="foto de perfil"></div>
+                <div class="mainMiCuenta__fotoPerfil">
+                    <img src="../multimedia/Foto de perfil.jpg" alt="foto de perfil">
+                </div>
                 <div class="mainMiCuenta__datos">
                     <div><span>Nombre:</span></div>
                     <div><span>Juan Manuel</span></div>
@@ -51,20 +67,19 @@
             </section>
         </section>
     </main>
-    
     <footer id="footer">
-        <div class="footer__contacto footer_container">
+        <div class="footer__contacto footer--container">
             <ul>
                 <li>Contacto:</li>
                 <li>+54 9 1234-0704.</li>
                 <li><a href="mailto:pupinarvaja@gmail.com?Subject=Solicito%20asesoramiento.">Pupinarvaja@gmail.com</a></li>
             </ul> 
         </div>
-        <div class="footer__derechos footer_container">
+        <div class="footer__derechos footer--container">
             <span>Todos los derechos han sido reservados.</span>
             <span>Narba&copy;</span>
         </div>
-        <div class="footer__socialMedia footer_container">
+        <div class="footer__socialMedia footer--container">
             <span><img src="../multimedia/instagram_logo.png">Instagram</span>
             <span><img src="../multimedia/facebook_logo.png">Facebook</span>
             <span><img src="../multimedia/twitter_logo.png">Twitter</span>

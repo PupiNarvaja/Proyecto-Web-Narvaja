@@ -7,13 +7,13 @@ $naranja: #d65600;
     flex-flow: row wrap;
     justify-content: space-between;
     position: static;
-    .header__logoBox {
+    .header__boxLogo {
         height: 8rem;
         display: flex;
         align-items: flex-end;
         margin: 0 0 0 10px ;
     }
-    .boxBuscar {
+    .header__boxBuscar {
         display: flex;
         align-items: flex-end;
         justify-content: center;
@@ -28,10 +28,10 @@ $naranja: #d65600;
             margin: 0 0 15px 0;
         }
     }
-    .header__nav {
+    #nav {
         margin: 0 3% 0 0;
         display: flex;
-        .header__listaNavegacion {
+        .header__listaNav {
             display: flex;
             list-style-type: none;
             align-items: flex-end;
@@ -61,7 +61,7 @@ $naranja: #d65600;
 @media (max-width: 1450px) {
     .header {
         justify-content: flex-start;
-        .boxBuscar {
+        .header__boxBuscar {
             transform: translate(70px, -60px);
             margin: 0 0 0 6%;
             width: 53%;
@@ -71,7 +71,7 @@ $naranja: #d65600;
             top: 70px;
             left: 300px;
             margin: 0 0 0 4%;
-            .header__listaNavegacion {
+            .header__listaNav {
                 display: flex;
                 justify-content: space-between;
                 width: 800px;
@@ -85,7 +85,7 @@ $naranja: #d65600;
 
 @media (max-width: 1280px) {
     .header {
-        .boxBuscar {
+        .header__boxBuscar {
             width: 46%;
         }
         #nav {
@@ -97,7 +97,7 @@ $naranja: #d65600;
 @media (max-width: 1130px) {
     .header {
         #nav {
-            .header__listaNavegacion {
+            .header__listaNav {
                 justify-content: flex-start;
                 width: 700px;
                 li {
@@ -110,13 +110,13 @@ $naranja: #d65600;
 
 @media (max-width: 1024px) {
     .header {
-        .boxBuscar {
+        .header__boxBuscar {
             margin: 0;
         }
         #nav {
             left: 250px;
             margin: 0;
-            .header__listaNavegacion {
+            .header__listaNav {
                 width: 600px;
                 li {
                     margin: 18px 10px;
@@ -129,10 +129,10 @@ $naranja: #d65600;
 
 @media (max-width: 868px) {
     .header {
-        .header__logoBox {
+        .header__boxLogo {
             margin: 0 0 0 100px;
         }
-        .boxBuscar {
+        .header__boxBuscar {
             .barraBuscar {
                 margin: 130px 5px 0 -40px;
             }
@@ -140,7 +140,7 @@ $naranja: #d65600;
         #nav {
             display: none;
         }
-        #respmenu input[type="checkbox"], #respmenu .fa-bars, #respmenu .fa-times {
+        #respmenu input[type="checkbox"], #respmenu .openMenu, #respmenu .closeMenu {
             position: absolute;  
             box-sizing: border-box;
             margin: 0;
@@ -150,7 +150,7 @@ $naranja: #d65600;
             width: 36px;
             height: 36px;  
         }
-        #respmenu .fa-bars, #respmenu .fa-times {
+        #respmenu .openMenu, #respmenu .closeMenu {
             font-size: 36px;
             pointer-events: none;
         }
@@ -184,10 +184,10 @@ $naranja: #d65600;
         #respmenu input:checked ~ nav {
             display: block;
           }
-        #respmenu input:checked ~ .fa-bars {
+        #respmenu input:checked ~ .openMenu {
             display: none;
           }
-        #respmenu input:not(:checked) ~ .fa-times {
+        #respmenu input:not(:checked) ~ .closeMenu {
             display: none;
           }
     }
@@ -199,7 +199,7 @@ $naranja: #d65600;
     .header {
         display: flex;
         flex-flow: row wrap;
-        .header__logoBox {
+        .header__boxLogo {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -211,7 +211,7 @@ $naranja: #d65600;
         #nav {
             align-self: start;
             margin: 0%;
-            .header__listaNavegacion {
+            .header__listaNav {
                 flex-flow: row wrap;
                 font-size: 18px;  
                 li {
@@ -219,7 +219,7 @@ $naranja: #d65600;
                 }
             }
         }
-        .boxBuscar {
+        .header__boxBuscar {
             width: 35%;
         }
     }
@@ -228,7 +228,7 @@ $naranja: #d65600;
 @media (max-width: 672px) {
     .header {
         height: 10rem;
-        .boxBuscar {
+        .header__boxBuscar {
             width: 75%;
             .barraBuscar {
                 margin: 45px 0 0 20px;
@@ -242,14 +242,14 @@ $naranja: #d65600;
     .header {
         #nav {
             margin: 0%;
-            .header__listaNavegacion {
+            .header__listaNav {
                 font-size: 12px;
                 li {
                     margin: 3% 3% 0 3%;
                 }
             }
         }
-        .boxBuscar {
+        .header__boxBuscar {
             .barraBuscar {
                 margin: 45px 0 0 -45px;
             }
