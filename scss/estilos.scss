@@ -199,7 +199,7 @@ body {
                     .main__listaFiltros {
                         display: flex;
                         flex-flow: row wrap;
-                        justify-content: center; //-----------------------------------------------------------------------------------
+                        justify-content: center;
                         li {
                             margin: 5px;
                         }
@@ -260,15 +260,7 @@ body {
                         height: 190px;
                     }
                 }
-            }
-            // .main__destacados {
-            //     .main__filtros {
-            //         .main__listaFiltros {
-            //             display: flex;
-            //             justify-content: flex-start;
-            //         }
-            //     }
-            // }               
+            }            
         } 
     }
 }
