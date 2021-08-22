@@ -1,3 +1,6 @@
+@charset "UTF-8";
+/*------------------------------------------HEADER
+-------------------------------------------------------------------------------------------------------------------*/
 .header {
   background-color: #d65600;
   height: 8rem;
@@ -173,6 +176,8 @@
   .header .header__boxBuscar .barraBuscar {
     margin: 45px 0 0 -45px; } }
 
+/*------------------------------------------ESLOGAN
+-------------------------------------------------------------------------------------------------------------------*/
 .eslogan {
   display: flex;
   justify-content: center;
@@ -196,6 +201,8 @@
     width: 85%;
     font-size: 8px; } }
 
+/*------------------------------------------FOOTER
+-------------------------------------------------------------------------------------------------------------------*/
 #footer {
   width: 100%;
   background-color: #ef6001;
@@ -231,6 +238,9 @@
       font-weight: 600;
       color: #acacac;
       padding: 6px; }
+      #footer .footer__socialMedia span a {
+        text-decoration: none;
+        color: #acacac; }
       #footer .footer__socialMedia span img {
         width: 24px; }
 
@@ -248,6 +258,8 @@
     body #footer .footer__socialMedia img {
       width: 18px; } }
 
+/*------------------------------------------COTIZACIÓN
+-------------------------------------------------------------------------------------------------------------------*/
 .main .main__cotizar {
   background: linear-gradient(120deg, white 35%, rgba(0, 0, 0, 0)), url(../multimedia/cotizando.jpg);
   background-size: cover;
@@ -326,6 +338,8 @@
       .mainCotizar .main__cotizar .formCotizar .btnEnviarCotizar, .mainCotizar .main__cotizar .formCotizar .btnBorrarCotizar {
         padding: 2% 4%; } }
 
+/*------------------------------------------ASESORAMIENTO
+-------------------------------------------------------------------------------------------------------------------*/
 .main .main__busquedaAsesorada {
   background: linear-gradient(120deg, white 35%, rgba(0, 0, 0, 0)), url(../multimedia/asesorando.jpg);
   background-size: cover;
@@ -396,6 +410,8 @@
       .mainAsesoramiento .main__busquedaAsesorada h2 {
         font-size: 16px; } }
 
+/*------------------------------------------MI CUENTA
+-------------------------------------------------------------------------------------------------------------------*/
 .mainMiCuenta {
   display: flex;
   justify-content: center;
@@ -439,6 +455,8 @@
   .mainMiCuenta .mainMiCuenta__misDatos h1 {
     font-size: 1rem; } }
 
+/*------------------------------------------MIS GUARDADOS
+-------------------------------------------------------------------------------------------------------------------*/
 .mainGuardados {
   display: flex;
   justify-content: center;
@@ -513,6 +531,7 @@
 
 @media (max-width: 580px) {
   .mainGuardados .misGuardadosPrincipal .misGuardadosPrincipal__guardados .guardados--container {
+    display: block;
     background-color: rgba(255, 255, 255, 0.74);
     padding: 10px 10px 20px 10px;
     margin: 15px 0;
@@ -520,6 +539,8 @@
     .mainGuardados .misGuardadosPrincipal .misGuardadosPrincipal__guardados .guardados--container .guardados__breveDescrip {
       display: none; } }
 
+/*------------------------------------------I N I C I O
+-------------------------------------------------------------------------------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -604,7 +625,15 @@ body {
           display: flex;
           justify-content: center;
           font-family: 'Ubuntu', sans-serif;
+          font-weight: lighter;
+          font-size: 1.3rem;
           margin: 10px 0; }
+        body .main .publicacionesPrincipal .publicacion span {
+          display: flex;
+          justify-content: center;
+          font-family: 'Ubuntu', sans-serif;
+          font-weight: lighter;
+          font-size: 1.1rem; }
     body .main .main__destacadoPrincipal {
       display: flex;
       justify-content: center;

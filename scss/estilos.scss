@@ -6,6 +6,8 @@
 @import "micuenta";
 @import "misguardados";
 
+/*------------------------------------------I N I C I O
+-------------------------------------------------------------------------------------------------------------------*/
 $naranja: #ef6001;
 
 * {
@@ -105,7 +107,16 @@ body {
                     display: flex;
                     justify-content: center;
                     font-family: 'Ubuntu', sans-serif;
+                    font-weight: lighter;
+                    font-size: 1.3rem;
                     margin: 10px 0;
+                }
+                span {
+                    display: flex;
+                    justify-content: center;
+                    font-family: 'Ubuntu', sans-serif;
+                    font-weight: lighter;
+                    font-size: 1.1rem;
                 }
             }
         }
@@ -151,8 +162,6 @@ body {
     }
 }
 
-
-
 @media (max-width: 1570px) {
     body {
         .main {
@@ -163,7 +172,6 @@ body {
         }
     }
 }
-
 
 @media (max-width: 1300px) {
     body {
@@ -228,8 +236,6 @@ body {
         } 
     }
 }
-
-
 
 @media (max-width: 520px) {
     body {
